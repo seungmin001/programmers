@@ -1,3 +1,5 @@
+# pop(0) 사용 지양한 코드..
+
 def solution(priorities, location):
     answer = 0
     
