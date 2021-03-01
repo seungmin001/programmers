@@ -10,6 +10,6 @@ def solution(clothes):
     # 각 종류당 : len(v) C 1 (하나 고르는 조합)
     # 다 곱한 다음에 아무것도 고르지 않은 경우 -1
     for k,v in d.items():
-        answer*=len(v)+1
+        answer*=len(v)+1 # 하나씩 고른 경우와 아무것도 고르지 않은 경우1
         
     return answer-1
