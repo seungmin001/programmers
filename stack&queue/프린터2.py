@@ -1,9 +1,8 @@
 from collections import deque
 def solution(priorities, location):
-    answer = 0
+    answer = 0  # 빠져나간 개수
     
     deq=deque(priorities) # deque
-    count=0 # 빠져나간 개수
     l=location # location값
     
     while deq:
@@ -17,9 +16,9 @@ def solution(priorities, location):
             else:
                 l-=1
         else: # 우선순위 가장 높음
-            count+=1
+            answer+=1
             if l==0:
-                return count
+                return answer
             else:
                 l-=1
             
